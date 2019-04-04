@@ -18,6 +18,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		C317EE822256255A00CBA120 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C317EE7C2256255A00CBA120 /* deneme3.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C317EE472256254600CBA120;
+			remoteInfo = deneme3;
+		};
+		C317EE842256255A00CBA120 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C317EE7C2256255A00CBA120 /* deneme3.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C317EE5F2256254700CBA120;
+			remoteInfo = deneme3Tests;
+		};
+		C317EE862256255A00CBA120 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C317EE7C2256255A00CBA120 /* deneme3.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C317EE6A2256254700CBA120;
+			remoteInfo = deneme3UITests;
+		};
 		C361CF3B22561DF400A2833E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C361CF1A22561DF300A2833E /* Project object */;
@@ -35,6 +56,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C317EE7C2256255A00CBA120 /* deneme3.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = deneme3.xcodeproj; path = deneme3/deneme3.xcodeproj; sourceTree = "<group>"; };
 		C361CF2222561DF300A2833E /* buildtest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = buildtest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C361CF2522561DF300A2833E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C361CF2622561DF300A2833E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -78,6 +100,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C317EE7D2256255A00CBA120 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C317EE832256255A00CBA120 /* deneme3.app */,
+				C317EE852256255A00CBA120 /* deneme3Tests.xctest */,
+				C317EE872256255A00CBA120 /* deneme3UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		C361CF1922561DF300A2833E = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +133,7 @@
 		C361CF2422561DF300A2833E /* buildtest */ = {
 			isa = PBXGroup;
 			children = (
+				C317EE7C2256255A00CBA120 /* deneme3.xcodeproj */,
 				C361CF2522561DF300A2833E /* AppDelegate.h */,
 				C361CF2622561DF300A2833E /* AppDelegate.m */,
 				C361CF2822561DF300A2833E /* ViewController.h */,
@@ -221,6 +254,12 @@
 			mainGroup = C361CF1922561DF300A2833E;
 			productRefGroup = C361CF2322561DF300A2833E /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C317EE7D2256255A00CBA120 /* Products */;
+					ProjectRef = C317EE7C2256255A00CBA120 /* deneme3.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				C361CF2122561DF300A2833E /* buildtest */,
@@ -229,6 +268,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C317EE832256255A00CBA120 /* deneme3.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = deneme3.app;
+			remoteRef = C317EE822256255A00CBA120 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C317EE852256255A00CBA120 /* deneme3Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = deneme3Tests.xctest;
+			remoteRef = C317EE842256255A00CBA120 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C317EE872256255A00CBA120 /* deneme3UITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = deneme3UITests.xctest;
+			remoteRef = C317EE862256255A00CBA120 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C361CF2022561DF300A2833E /* Resources */ = {
