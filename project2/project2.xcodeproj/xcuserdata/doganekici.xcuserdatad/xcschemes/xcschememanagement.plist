@@ -4,34 +4,23 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>project2.xcscheme_^#shared#^_</key>
+		<key>project2.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>0</integer>
+			<key>isShown</key>
+			<true/>
 		</dict>
-		<key>project3scheme.xcscheme_^#shared#^_</key>
+		<key>project2Tests.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<true/>
+		</dict>
+		<key>project2UITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>C361CF5F2256238300A2833E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C361CF772256238400A2833E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C361CF822256238400A2833E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
 </dict>
 </plist>

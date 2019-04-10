@@ -4,34 +4,23 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>buildtest.xcscheme_^#shared#^_</key>
+		<key>buildtest.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>0</integer>
+			<key>isShown</key>
+			<true/>
 		</dict>
-		<key>buildtest2.xcscheme_^#shared#^_</key>
+		<key>buildtestTests.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<true/>
+		</dict>
+		<key>buildtestUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>C361CF2122561DF300A2833E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C361CF3922561DF400A2833E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C361CF4422561DF400A2833E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
 </dict>
 </plist>
