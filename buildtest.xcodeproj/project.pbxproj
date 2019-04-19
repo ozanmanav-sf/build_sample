@@ -17,8 +17,6 @@
 		C361CF4A22561DF400A2833E /* buildtestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C361CF4922561DF400A2833E /* buildtestUITests.m */; };
 		C36F95542269EA9C001D3572 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C36F95532269EA9C001D3572 /* Alamofire.framework */; };
 		C36F95552269EA9C001D3572 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C36F95532269EA9C001D3572 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C36F95572269EAA0001D3572 /* Hero.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C36F95562269EAA0001D3572 /* Hero.framework */; };
-		C36F95582269EAA0001D3572 /* Hero.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C36F95562269EAA0001D3572 /* Hero.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +64,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C36F95582269EAA0001D3572 /* Hero.framework in Embed Frameworks */,
 				C36F95552269EA9C001D3572 /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -93,7 +90,6 @@
 		C361CF4922561DF400A2833E /* buildtestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = buildtestUITests.m; sourceTree = "<group>"; };
 		C361CF4B22561DF400A2833E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C36F95532269EA9C001D3572 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
-		C36F95562269EAA0001D3572 /* Hero.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Hero.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +97,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C36F95572269EAA0001D3572 /* Hero.framework in Frameworks */,
 				C36F95542269EA9C001D3572 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,7 +131,6 @@
 		C361CF1922561DF300A2833E = {
 			isa = PBXGroup;
 			children = (
-				C36F95562269EAA0001D3572 /* Hero.framework */,
 				C36F95532269EA9C001D3572 /* Alamofire.framework */,
 				C361CF2422561DF300A2833E /* buildtest */,
 				C361CF3D22561DF400A2833E /* buildtestTests */,
@@ -526,6 +520,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T9P2R7YH4K;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -547,6 +542,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T9P2R7YH4K;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
