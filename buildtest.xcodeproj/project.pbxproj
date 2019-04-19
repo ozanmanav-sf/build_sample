@@ -15,6 +15,10 @@
 		C361CF3522561DF400A2833E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C361CF3422561DF400A2833E /* main.m */; };
 		C361CF3F22561DF400A2833E /* buildtestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C361CF3E22561DF400A2833E /* buildtestTests.m */; };
 		C361CF4A22561DF400A2833E /* buildtestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C361CF4922561DF400A2833E /* buildtestUITests.m */; };
+		C36F95542269EA9C001D3572 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C36F95532269EA9C001D3572 /* Alamofire.framework */; };
+		C36F95552269EA9C001D3572 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C36F95532269EA9C001D3572 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C36F95572269EAA0001D3572 /* Hero.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C36F95562269EAA0001D3572 /* Hero.framework */; };
+		C36F95582269EAA0001D3572 /* Hero.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C36F95562269EAA0001D3572 /* Hero.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C36F954F2269E806001D3572 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C36F95582269EAA0001D3572 /* Hero.framework in Embed Frameworks */,
+				C36F95552269EA9C001D3572 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		C317EE7C2256255A00CBA120 /* deneme3.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = deneme3.xcodeproj; path = deneme3/deneme3.xcodeproj; sourceTree = "<group>"; };
 		C361CF2222561DF300A2833E /* buildtest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = buildtest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +92,8 @@
 		C361CF4522561DF400A2833E /* buildtestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = buildtestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C361CF4922561DF400A2833E /* buildtestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = buildtestUITests.m; sourceTree = "<group>"; };
 		C361CF4B22561DF400A2833E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C36F95532269EA9C001D3572 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
+		C36F95562269EAA0001D3572 /* Hero.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Hero.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +101,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C36F95572269EAA0001D3572 /* Hero.framework in Frameworks */,
+				C36F95542269EA9C001D3572 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +136,8 @@
 		C361CF1922561DF300A2833E = {
 			isa = PBXGroup;
 			children = (
+				C36F95562269EAA0001D3572 /* Hero.framework */,
+				C36F95532269EA9C001D3572 /* Alamofire.framework */,
 				C361CF2422561DF300A2833E /* buildtest */,
 				C361CF3D22561DF400A2833E /* buildtestTests */,
 				C361CF4822561DF400A2833E /* buildtestUITests */,
@@ -175,6 +200,7 @@
 				C361CF1E22561DF300A2833E /* Sources */,
 				C361CF1F22561DF300A2833E /* Frameworks */,
 				C361CF2022561DF300A2833E /* Resources */,
+				C36F954F2269E806001D3572 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -500,6 +526,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T9P2R7YH4K;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = buildtest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -517,6 +547,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T9P2R7YH4K;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = buildtest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
