@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C317EE462256254600CBA120"
-               BuildableName = "deneme3.app"
-               BlueprintName = "deneme3"
-               ReferencedContainer = "container:deneme3.xcodeproj">
+               BlueprintIdentifier = "C3DF5AB82273322600543C65"
+               BuildableName = "launchapp.app"
+               BlueprintName = "launchapp"
+               ReferencedContainer = "container:buildtest.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C317EE462256254600CBA120"
-            BuildableName = "deneme3.app"
-            BlueprintName = "deneme3"
-            ReferencedContainer = "container:deneme3.xcodeproj">
+            BlueprintIdentifier = "C3DF5AB82273322600543C65"
+            BuildableName = "launchapp.app"
+            BlueprintName = "launchapp"
+            ReferencedContainer = "container:buildtest.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C317EE462256254600CBA120"
-            BuildableName = "deneme3.app"
-            BlueprintName = "deneme3"
-            ReferencedContainer = "container:deneme3.xcodeproj">
+            BlueprintIdentifier = "C3DF5AB82273322600543C65"
+            BuildableName = "launchapp.app"
+            BlueprintName = "launchapp"
+            ReferencedContainer = "container:buildtest.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -71,10 +71,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C317EE462256254600CBA120"
-            BuildableName = "deneme3.app"
-            BlueprintName = "deneme3"
-            ReferencedContainer = "container:deneme3.xcodeproj">
+            BlueprintIdentifier = "C3DF5AB82273322600543C65"
+            BuildableName = "launchapp.app"
+            BlueprintName = "launchapp"
+            ReferencedContainer = "container:buildtest.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

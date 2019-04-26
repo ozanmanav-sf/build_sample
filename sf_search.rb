@@ -10,30 +10,35 @@ end
 root_path = ARGV[0]
 
 #Find targets
-def find_targets(project)
-    return_value = {}
-    return_value["targets"] = []
-    
+def get_launchable_target(project)
     project.native_targets.each do |target|
-        return_value["bundleidentifier"] = target.build_configuration_list.build_settings(target.build_configuration_list.default_configuration_name)["PRODUCT_BUNDLE_IDENTIFIER"]
         if target.launchable_target_type?
-            embedded_targets = project.embedded_targets_in_native_target(target)
-            embedded_targets.each do |embedded|
-                if embedded.extension_target_type?
-                    return_value["targets"].push(embedded)
-                    #Watch App
-                elsif embedded.product_type.match(/com.apple.product-type.application.watchapp/)
-                    return_value["targets"].push(embedded)
-                    embedded_watch_targets = project.embedded_targets_in_native_target(embedded)
-                    embedded_watch_targets.each do |embedded_watch|
-                        if embedded_watch.extension_target_type?
-                            return_value["targets"].push(embedded_watch)
-                        end
-                    end
+            return target
+        end
+    end
+    
+    return nil
+end
+
+def get_bundle_identifier(target)
+    return target.build_configuration_list.build_settings(target.build_configuration_list.default_configuration_name)["PRODUCT_BUNDLE_IDENTIFIER"]
+end
+
+def get_embedded_and_watch_targets(project, launchable_target)
+    targets = []
+    embedded_targets = project.embedded_targets_in_native_target(launchable_target)
+    embedded_targets.each do |embedded|
+        if embedded.extension_target_type?
+            targets.push({"name" => embedded,"bundleidentifier" => get_bundle_identifier(embedded)})
+            #Watch App
+        elsif embedded.product_type.match(/com.apple.product-type.application.watchapp/)
+            targets.push({"name" => embedded,"bundleidentifier" => get_bundle_identifier(embedded)})
+            embedded_watch_targets = project.embedded_targets_in_native_target(embedded)
+            embedded_watch_targets.each do |embedded_watch|
+                if embedded_watch.extension_target_type?
+                    targets.push({"name" => embedded_watch,"bundleidentifier" => get_bundle_identifier(embedded_watch)})
                 end
             end
-            
-            break
         end
     end
     
@@ -48,9 +53,9 @@ Find.find("#{root_path}") do |p|
         project.recreate_user_schemes
         paths_schemes = {}
         paths_schemes["path"] = p.split(root_path)[1]
-        
-        paths_schemes["targets"] = find_targets(project)
-
+        launchable_target = get_launchable_target(project)
+        paths_schemes["bundleidentifier"] = get_bundle_identifier(launchable_target)
+        paths_schemes["extensions"] = get_embedded_and_watch_targets(project,launchable_target)
         paths_schemes["schemes"] = Xcodeproj::Project.schemes(p)
         project_paths_schemes << paths_schemes
         Find.prune
@@ -66,6 +71,7 @@ Find.find("#{root_path}") do |p|
         #schemes method of workspace doesn't find inner project schemes. example : xcodeproje inside xcodeproje
         workspace = Xcodeproj::Workspace.new_from_xcworkspace(p)
         workspace.load_schemes(p)
+        puts workspace.file_references[1].path
         paths_schemes["schemes"] = workspace.schemes.keys
         workspace_paths_schemes << paths_schemes
         Find.prune

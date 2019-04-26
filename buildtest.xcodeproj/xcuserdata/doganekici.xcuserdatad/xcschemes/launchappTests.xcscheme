@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C317EE462256254600CBA120"
-               BuildableName = "deneme3.app"
-               BlueprintName = "deneme3"
-               ReferencedContainer = "container:deneme3.xcodeproj">
+               BlueprintIdentifier = "C3DF5ACF2273322900543C65"
+               BuildableName = "launchappTests.xctest"
+               BlueprintName = "launchappTests"
+               ReferencedContainer = "container:buildtest.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,15 +29,18 @@
       buildConfiguration = "Debug">
       <AdditionalOptions>
       </AdditionalOptions>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C317EE462256254600CBA120"
-            BuildableName = "deneme3.app"
-            BlueprintName = "deneme3"
-            ReferencedContainer = "container:deneme3.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
+      <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C3DF5ACF2273322900543C65"
+               BuildableName = "launchappTests.xctest"
+               BlueprintName = "launchappTests"
+               ReferencedContainer = "container:buildtest.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -51,16 +54,6 @@
       allowLocationSimulation = "YES">
       <AdditionalOptions>
       </AdditionalOptions>
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C317EE462256254600CBA120"
-            BuildableName = "deneme3.app"
-            BlueprintName = "deneme3"
-            ReferencedContainer = "container:deneme3.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       savedToolIdentifier = ""
@@ -68,15 +61,6 @@
       debugDocumentVersioning = "YES"
       buildConfiguration = "Release"
       shouldUseLaunchSchemeArgsEnv = "YES">
-      <BuildableProductRunnable>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C317EE462256254600CBA120"
-            BuildableName = "deneme3.app"
-            BlueprintName = "deneme3"
-            ReferencedContainer = "container:deneme3.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

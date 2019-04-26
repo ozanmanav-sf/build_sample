@@ -8,130 +8,69 @@
 		<dict>
 			<key>isShown</key>
 			<true/>
-			<key>orderHint</key>
-			<integer>3</integer>
 		</dict>
 		<key>buildtest.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<true/>
-			<key>orderHint</key>
-			<integer>5</integer>
-		</dict>
-		<key>buildtest.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
-		</dict>
-		<key>buildtest2.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>6</integer>
 		</dict>
 		<key>buildtestTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<true/>
-			<key>orderHint</key>
-			<integer>7</integer>
 		</dict>
 		<key>buildtestUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<true/>
-			<key>orderHint</key>
-			<integer>8</integer>
-		</dict>
-		<key>buildtestnewexten.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>18</integer>
 		</dict>
 		<key>embedexte.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<true/>
-			<key>orderHint</key>
-			<integer>9</integer>
 		</dict>
 		<key>imessagetest.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<true/>
-			<key>orderHint</key>
-			<integer>10</integer>
 		</dict>
-		<key>launchapp.xcscheme_^#shared#^_</key>
+		<key>launchapp.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>17</integer>
+			<key>isShown</key>
+			<true/>
+		</dict>
+		<key>launchappTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+		</dict>
+		<key>launchappUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
 		</dict>
 		<key>noneexte.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<true/>
-			<key>orderHint</key>
-			<integer>11</integer>
-		</dict>
-		<key>test (Notification).xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>16</integer>
 		</dict>
 		<key>test Extension.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<true/>
-			<key>orderHint</key>
-			<integer>13</integer>
 		</dict>
 		<key>test.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<true/>
-			<key>orderHint</key>
-			<integer>12</integer>
-		</dict>
-		<key>test.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>15</integer>
 		</dict>
 		<key>todayextension.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<true/>
-			<key>orderHint</key>
-			<integer>14</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>C361CF2122561DF300A2833E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C3DF5AB82273322600543C65</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C3DF5ACF2273322900543C65</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C3DF5ADA2273322900543C65</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C3EA7B462270973D00F9E6BE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
 </dict>
 </plist>
