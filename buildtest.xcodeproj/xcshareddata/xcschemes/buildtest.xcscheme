@@ -48,6 +48,16 @@
                ReferencedContainer = "container:buildtest.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C3EA7B2C2270905D00F9E6BE"
+               BuildableName = "frameworktestTests.xctest"
+               BlueprintName = "frameworktestTests"
+               ReferencedContainer = "container:buildtest.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
