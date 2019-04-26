@@ -11,20 +11,23 @@ root_path = ARGV[0]
 
 #Find targets
 def find_targets(project)
-    targets = []
+    return_value = {}
+    return_value["targets"] = []
+    
     project.native_targets.each do |target|
+        return_value["bundleidentifier"] = target.build_configuration_list.build_settings(target.build_configuration_list.default_configuration_name)["PRODUCT_BUNDLE_IDENTIFIER"]
         if target.launchable_target_type?
             embedded_targets = project.embedded_targets_in_native_target(target)
             embedded_targets.each do |embedded|
                 if embedded.extension_target_type?
-                    targets.push(embedded)
+                    return_value["targets"].push(embedded)
                     #Watch App
                 elsif embedded.product_type.match(/com.apple.product-type.application.watchapp/)
-                    targets.push(embedded)
+                    return_value["targets"].push(embedded)
                     embedded_watch_targets = project.embedded_targets_in_native_target(embedded)
                     embedded_watch_targets.each do |embedded_watch|
                         if embedded_watch.extension_target_type?
-                            targets.push(embedded_watch)
+                            return_value["targets"].push(embedded_watch)
                         end
                     end
                 end
