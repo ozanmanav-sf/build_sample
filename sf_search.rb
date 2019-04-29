@@ -71,8 +71,11 @@ Find.find("#{root_path}") do |p|
         #schemes method of workspace doesn't find inner project schemes. example : xcodeproje inside xcodeproje
         workspace = Xcodeproj::Workspace.new_from_xcworkspace(p)
         workspace.load_schemes(p)
-        puts workspace.file_references[1].path
-        paths_schemes["schemes"] = workspace.schemes.keys
+        projects = []
+        workspace.file_references.each do |file|
+             projects.push(file.path)
+        end
+        paths_schemes["projects"] = projects
         workspace_paths_schemes << paths_schemes
         Find.prune
     elsif File.extname(p) == ".xcodeproj"
