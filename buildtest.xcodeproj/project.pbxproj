@@ -1735,7 +1735,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.smartcompany.buildtest.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.smartcompany.buildtest.watchkitapp.watchkitextensiontemp;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE_SPECIFIER = "Smartface In-House Distribution (Enterprise)";
 				SDKROOT = watchos;
@@ -1758,7 +1758,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.smartcompany.buildtest.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.smartcompany.buildtest.watchkitapp.watchkitextensiontemp;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE_SPECIFIER = "Smartface In-House Distribution (Enterprise)";
 				SDKROOT = watchos;
@@ -1818,7 +1818,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.smartcompany.buildtest.noneexte;
+				PRODUCT_BUNDLE_IDENTIFIER = io.smartcompany.buildtest.noneextetemp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -1838,7 +1838,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.smartcompany.buildtest.noneexte;
+				PRODUCT_BUNDLE_IDENTIFIER = io.smartcompany.buildtest.noneextetemp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
