@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:../../../denemeproj2/denemeproj.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../denemeproj3/denemeproj.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "container:../denemeproj4/denemeproj.xcodeproj">
+   </FileRef>
+</Workspace>
