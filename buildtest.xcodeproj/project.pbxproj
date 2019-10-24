@@ -32,8 +32,6 @@
 		C361CF3522561DF400A2833E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C361CF3422561DF400A2833E /* main.m */; };
 		C361CF3F22561DF400A2833E /* buildtestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C361CF3E22561DF400A2833E /* buildtestTests.m */; };
 		C361CF4A22561DF400A2833E /* buildtestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C361CF4922561DF400A2833E /* buildtestUITests.m */; };
-		C36F95542269EA9C001D3572 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C36F95532269EA9C001D3572 /* Alamofire.framework */; };
-		C36F95552269EA9C001D3572 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C36F95532269EA9C001D3572 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C3DF5ABD2273322600543C65 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3DF5ABC2273322600543C65 /* AppDelegate.m */; };
 		C3DF5AC02273322600543C65 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3DF5ABF2273322600543C65 /* ViewController.m */; };
 		C3DF5AC32273322600543C65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3DF5AC12273322600543C65 /* Main.storyboard */; };
@@ -130,17 +128,6 @@
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C36F954F2269E806001D3572 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				C36F95552269EA9C001D3572 /* Alamofire.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C3EA7B6F2270973F00F9E6BE /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -181,7 +168,6 @@
 		C361CF4522561DF400A2833E /* buildtestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = buildtestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C361CF4922561DF400A2833E /* buildtestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = buildtestUITests.m; sourceTree = "<group>"; };
 		C361CF4B22561DF400A2833E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C36F95532269EA9C001D3572 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
 		C3DF5AB92273322600543C65 /* launchapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = launchapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3DF5ABB2273322600543C65 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C3DF5ABC2273322600543C65 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -228,7 +214,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C36F95542269EA9C001D3572 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,7 +314,6 @@
 		C361CF1922561DF300A2833E = {
 			isa = PBXGroup;
 			children = (
-				C36F95532269EA9C001D3572 /* Alamofire.framework */,
 				C361CF2422561DF300A2833E /* buildtest */,
 				C361CF3D22561DF400A2833E /* buildtestTests */,
 				C361CF4822561DF400A2833E /* buildtestUITests */,
@@ -500,7 +484,6 @@
 				C361CF1E22561DF300A2833E /* Sources */,
 				C361CF1F22561DF300A2833E /* Frameworks */,
 				C361CF2022561DF300A2833E /* Resources */,
-				C36F954F2269E806001D3572 /* Embed Frameworks */,
 				C30009C82270838F00B83CBB /* Embed App Extensions */,
 				C36F956D2269FCF6001D3572 /* ShellScript */,
 				C3EA7B6F2270973F00F9E6BE /* Embed Watch Content */,
@@ -1029,18 +1012,18 @@
 		C30009C62270838F00B83CBB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = B78R5LT983;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = todayextension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.smartcompany.buildtest.todayextension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.smartfacecompany.buildtest.todayextension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = builttesttoday;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1049,18 +1032,18 @@
 		C30009C72270838F00B83CBB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = B78R5LT983;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = todayextension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.smartcompany.buildtest.todayextension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.smartfacecompany.buildtest.todayextension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = builttesttoday;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1181,11 +1164,10 @@
 		C361CF4F22561DF400A2833E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = B78R5LT983;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1196,9 +1178,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.smartcompany.buildtest;
+				PRODUCT_BUNDLE_IDENTIFIER = io.smartfacecompany.buildtest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = buildtestappstore;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1206,11 +1188,10 @@
 		C361CF5022561DF400A2833E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = B78R5LT983;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1221,9 +1202,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.smartcompany.buildtest;
+				PRODUCT_BUNDLE_IDENTIFIER = io.smartfacecompany.buildtest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = buildtestappstore;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -1457,18 +1438,18 @@
 		C3EA7B932270A25F00F9E6BE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = B78R5LT983;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = embedexte/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.smartcompany.buildtest.embedextetemp;
+				PRODUCT_BUNDLE_IDENTIFIER = io.smartfacecompany.buildtest.embedextetemp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = buildtestembedexte;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1477,18 +1458,18 @@
 		C3EA7B942270A25F00F9E6BE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = B78R5LT983;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = embedexte/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.smartcompany.buildtest.embedextetemp;
+				PRODUCT_BUNDLE_IDENTIFIER = io.smartfacecompany.buildtest.embedextetemp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = buildtestembedexte;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
